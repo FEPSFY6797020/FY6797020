@@ -1,130 +1,108 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <img src="Logo.png" alt="Banner" width="700" height="200">
-            <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
-            <h2>Student URN: 6797020 </h2>
-        <hr>
-        <h2 style="font-family: calibri;"><b>Conference paper: Bridge Deck Repairs</b></h2>
-        <hr>
-            
-            <style>
-                    table {
-                        font-family: arial, sans-serif;
-                        border-collapse: collapse;
-                        width: 30%;
-            
-                    }
-                    td, th {
-                        border: 1px solid #dddddd;
-                        text-align: left;
-                        padding: 8px;
-                    }
-            
-                    tr:nth-child(even) {
-                        background-color: #dddddd;
-                    }
-            </style>
-        <style>
-    p.ex1 {
-        margin-left: 250px;
-    }
-    </style>
-        </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-    .mySlides {display:none;}
-    </style>
-    <body style="background-color:#c2b4b4;margin-left:50px;">
-        <table>
 
-            <tr>
-                <th><h3>Table of contents</h3></th>
-            </tr>
-            <tr>
-                <td><a href="#Abstract">Abstract</a></td>
-            </tr>
-            <tr>
-                <td><a href="#Introduction">Introduction</a></td>
-            </tr>
-            <tr>
-                <td><a href="#Analysis_and_discussion">Analysis and discussion</a></td>
-            </tr>
-            <tr>
-                <td><a href="#References">References</a></td>
-            </tr>
-        </table>
-        <h3 id="Abstract">Abstract</h3>
-                <pre>  This paper presents a novel adaptive active learning strategy. The most accurate classification 
-  model from a heterogeneous classifier pool is selected at each learning epoch. Our goal is to achieve 
-  greater incremental improvement in accuracy, compared to using a single type of classification model
-  throughout the process. The strategy is evaluated on benchmark datasets. We further consider an
-  application to texture classification problems in sonar mosaic imagery and compare it with nonadaptive active 
-  learning and traditional machine learning approaches. Our results show that…We conclude that…
-            </pre>
-        <h3 id="Introduction">Introduction</h3>
-              <pre>  Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt 
-  by an intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-  learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-  candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-  to improve the classification model. Various strategies have been proposed including; Query by
-  Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-  sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-  2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-  presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-  labels. After adding the newly labeled instances to the current training set, a revised model is
-  subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-  learning at each epoch. The process is continued until some stopping criterion has been met, such as
-  reaching a stage where information from the selected instances is contrary to the model, causing the
-  classifier confidence to drop, as in Vlachos (2008).</pre>
-        <h3 id="Analysis_and_discussion">Analysis and discussion</h3>
-            <pre>
-Bridge deck repair durability is the subject of much recent research such as in <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al(2023).</a>
-  
-Table 1: Data on cost and lifespan of bridge repairs
-                <table>
-                <tr>
-                    <th>£ Cost of repairs</th>
-                    <th>Lifespan of repairs (years)</th>
-                </tr>
-                <tr>
-                    <td>0.7 m</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>3.3 m</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>2.6 m</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>17.4 m</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>8.8 m</td>
-                    <td>9</td>
-                </tr>
-                </table>
-            </pre>
-        <h3 id="References">References</h3>
-          <pre>  Angluin, D (1988), Queries and concept learning. Machine learning 2, (4), 319-342.
-  
-  Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines,
-  Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003).
-  
-  Bruzzone, L, Chi, M and Harconcini, M (2006), A novel transductive SVM for semisupervised classication of remote-sensing images,
-  IEEE Transactions on Geoscience and Remote Sensing, 44, (11), 3363.
-  
-  Bruzzone, L and Persello, C (2009), Active learning for classification of remote sensing images.
-  In: Geoscience and Remote Sensing Symposium, 2009 IEEE International, IGARSS 2009, 3.
-  
-  Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margin classifiers.
-  In: Proc. 17th Internet. (onion Machine Learning. Morgan Kaufman, Stanford, CA,111-118.
-</pre>
-    </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url("stars.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: scroll;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    table {
+      font-family: Arial, sans-serif;
+      border-collapse: collapse;
+      width: 30%;
+      margin: 0 auto;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    p.ex1 {
+      margin-left: 250px;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    /* Style for anchor links in the table of contents */
+    table a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+  <img src="Logo.png" alt="Banner" width="800" height="99">
+  <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
+  <h2>Student URN: 6797020 </h2>
+  <hr>
+  <h2 style="font-family: calibri;"><b>Conference paper: Synthetic fuels</b></h2>
+  <hr>
+</head>
+
+<body>
+  <!-- Your content goes here -->
+
+  <table>
+    <tr>
+      <th>
+        <h3>Table of contents</h3>
+      </th>
+    </tr>
+    <tr>
+      <td><a href="#Abstract">Abstract</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Introduction">Introduction</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Analysis_and_discussion">Analysis and discussion</a></td>
+    </tr>
+    <tr>
+      <td><a href="#References">References</a></td>
+    </tr>
+  </table>
+
+  <h3 id="Abstract">Abstract</h3>
+  <p>
+    An alternate method of fuel production has been created in the early 20th century to be called synthetic fuel. These methods are used by Nazi Germany thinking they would use it as a strategic advantage to outlast enemies. However, the earlier than planned defeat meant that it was not effective. Undeterred, the United States and South Africa capitalized on the technological advancements until the price of oil causes synthetic fuel to be become redundant. Fast forward to the 21st century we have the issue of global warming. Combustion engine cars being one of the many contributors to the problem. Porsche is aiming to develop an environmentally friendly fuel to mitigate the impact of combustion engine emissions and reduce the production of billions of tons of scrap. 
+  </p>
+
+  <h3 id="Introduction">Introduction</h3>
+  <p>
+    The era of the combustion engine is approaching its end, or so we thought. Over the past century, we've witnessed the development of alternative fuel sources distinct from traditional fossil fuels such as our beloved diesel and petroleum.
+  </p>
+
+  <h3 id="Analysis_and_discussion">Analysis and discussion</h3>
+  <p>
+    The discovery of synthetic fuel production remains to be not exactly known with some speculation that it was first sited in the United States and others saying that a biodiesel was used in the Czech Republic for oil lamps before that. It was in Germany that the first the publicise the production of synthetic fuel. Friedrich Bergius, a German scientist, played a vital role in advancing the conversion of coal into synthetic fuel through the Bergius process. (Friedrich Bergius (2023) Encyclopædia Britannica. Available at: https://www.britannica.com/biography/Friedrich-Bergius (Accessed: 30 October 2023). Simultaneously, another noteworthy project was gaining ground, the Fischer-Tropsch synthesis (FTS), developed by Franz Fischer and Hans Tropsch. (Dry, M. (2004) ‘page 1-32’, in Fischer-Tropsch technology. Amsterdam: Elsevier, pp. 1–32.) The Fischer process stood as a foundation layer for the development of this energy source.
+    Despite these pioneering efforts, the awareness of the development of synthetic fuels remained relatively quiet due to inefficiencies and high costs, especially when compared to the well-known and well-used diesel and petroleum. Germany took a significant interest in synthetic fuels to reduce its dependence on petroleum imports. (Dry, M. (2004) ‘page 1-32’, in Fischer-Tropsch technology. Amsterdam: Elsevier, pp. 1–32.) During 1930s, the Nazi party focused its attention on synthetic fuels, not only as an economic standpoint but also in preparation for outrunning any enemies in the war. In a controversial headline, synthetic fuel production was banned in Germany in 1945 (THE CONFERENCE OF BERLIN (1945) U.S. Department of State. Available at: https://history.state.gov/historicaldocuments/frus1945Berlinv02/d848 (Accessed: 05 November 2023)).  This ban led to the dismantling and closure of FTS plants, marking a sudden halt to the industry.
+    However, this was not the end for synthetic fuels. Already in the 1930s, South African companies displayed interest in the subject, investing in the construction of FTS plants in South Africa. (Hilsenrath, P. (1989) The development of synthetic fuels in South Africa - JSTOR, jstor. Available at: https://www.jstor.org/stable/24807938 (Accessed: 03 November 2023)) After the war, the United States reignited its archaic enthusiasm for synthetic fuels. 
+    A milestone for the United States arrived on April 5th, 1944, when Congress approved the Synthetic Fuels Act. This legislation allocated $20 million resulting in the establishment of new laboratories and plant focused on advancing synthetic fuels. (Vietor, R.H.K. (1980) The Synthetic Liquid Fuels Program: Energy politics in the ... - JSTOR, jstor. Available at: https://www.jstor.org/stable/3114274 (Accessed: 03 November 2023). Progress and innovation continued at a steady but measured pace. Soon the 1980s struck in America, when a dramatic drop in oil prices prompted the discontinuation of further synthetic fuel production. (ChartsBin, Statistics collector team 2014, (no date) Historical crude oil prices, 1861 to present, ChartsBin. Available at: http://chartsbin.com/view/oau (Accessed: 30 October 2023)) Unfortunately, it was abandoned, and it wouldn't survive this time around.
+    While significant early production of synthetic fuels was environmentally still damaging as it was just a process of turning coal into products like gas. During the process the toxic gases are created and released into the atmosphere. (Dry, M. (2004) ‘page 1-32’, in Fischer-Tropsch technology. Amsterdam: Elsevier, pp. 1–32) With recent technological advancements have rekindled interest in developing an alternative fuel system for conventional combustion engines that eliminates toxic emissions. On the planet there are around 1.474 billion cars on the road. (Hedges Company(2023). Available at: https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world/ (Accessed: 03 November 2023)) it is also said that there are around 26 million electric cars on the road. (Iea (2023) Trends in electric light-duty vehicles – global EV outlook 2023 – analysis, IEA. Available at: https://www.iea.org/reports/global-ev-outlook-2023/trends-in-electric-light-duty-vehicles (Accessed: 05 November 2023)) This means approximately 1.45 billion combustion engine vehicles are set to be scrapped and taken off the roads. If electric cars were to replace combustion cars there wouldn’t be enough lithium to make batteries. It will be chaos.
+    Modern synthetic fuels, more commonly known as e-fuels, offering a new hope. The prestigious automobile company Porsche has been discreetly testing and developing e-fuels. This innovative fuel could potentially convert any combustion engines carbon dioxide-free with only the need for minor tweaks to the tuning of the car. In mid-2022, a plant in Chile began production of this new fuel. The e-fuel production process involves water and carbon dioxide. Hydrogen is generated via electrolysis, employing a direct current to split water molecules. The hydrogen is collected at the cathode, while the anode attracts carbon dioxide. This process, referred to as methanol synthesis, yields e-methanol, which is subsequently transformed into synthetic petrol through another process known as MTG synthesis. (Efuels. Available at: https://media.porsche.com/mediakit/innovation-sustainability-performance/en/innovation-sustainability-performance/synthetic-fuels (Accessed: 03 November 2023).)
+    Porsche was determined to be producing around 130,000 litre of e-fuel a year in their new Chile production plant by the end of 2022. They showcased their innovation by fuelling all their pre-1966 911 cars at the 2023 Goodwood Revival Festival. (Jupp, E. (2023) Sustainable fuels – ‘setting the example’ at revival 2023: GRR, Goodwood. Available at: https://www.goodwood.com/grr/event-coverage/goodwood-revival/2023/9/sustainable-fuels--setting-the-example-at-revival-2023/ (Accessed: 03 November 2023)) Additionally, Porsche tested their e-fuels in the 2021 and 2022 seasons of the Porsche Mobil Super Cup, with all participating cars running on their new e-fuel. (ExxonMobil and Porsche are testing advanced biofuels and renewable, lower carbon efuels  ExxonMobil. Available at: https://corporate.exxonmobil.com/what-we-do/lower-emission-transportation/emerging-vehicle-and-fuel-technology/exxonmobil-and-porsche-strategic-collaboration. (Accessed: 03 November 2023))
+    This is the only hope to save the combustion engine and car fanatics all around the world dread the day that we will only have dedicated tracks for the magnificent machines we have engineered from generations of incredible mechanics. However, if we can get synthetic fuel to be produced at a sufficient rate and then distributed around the world not only could we save billions of tons of scrap but the motors that many of us adore and cherish.
+
+  </p>
+
+  <h3 id="References">References</h3>
+  <p>
+    Angluin, D (1988), Queries and concept learning...
+  </p>
+
+</body>
+
 </html>
