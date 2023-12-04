@@ -23,13 +23,12 @@
           height: auto;
         }
 
-        @media screen and (max-width: 800px) {
-        }
 
         p {
           width: 80%;
           margin-left: auto;
           margin-right: auto;
+          text-decoration: none;
         }
 
         .mySlides {
@@ -48,6 +47,10 @@
           justify-content: center;
           flex-wrap: wrap;
         }
+      a {
+        text-decoration: none;
+        color: white; 
+      }
 
         #banner a {
           color: white;
@@ -66,6 +69,14 @@
           background-color: #333;
           
         }
+      #slide-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Push items to the bottom */
+        align-items: center;
+        /* Adjust the height based on your preference */
+      }
     </style>
   <img src="Logo.png" alt="Banner" width="1080" height="auto">
   <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
@@ -141,11 +152,12 @@
   </p>
   <h2 id="Early_Development">Early Development</h2>
   <p>
-    The discovery of synthetic fuel production remains to be not exactly known. It was alleged that it was first attempted in the 17th century (Runnels et al., 1952). The first recorded oil-shale farm using the Selligue retorting process was in France in 1838 (Runnels et al., 1952). Later in 1850, Scotland had an oil-shale operation using the Young process (Runnels et al., 1952). Furthermore, these oil-shale operations were established in many areas such as: Europe, Asia, Oceania, North America, South America, Africa and the Middle East (Runnels et al., 1952). 
+    The discovery of synthetic fuel production remains to be not exactly known. It was alleged that it was first attempted in the 17th century <a href="#runnels-et-al-1952" onclick="scrollToSection('runnels-et-al-1952')">(Runnels et al., 1952)</a>. The first recorded oil-shale farm using the Selligue retorting process was in France in 1838 <a href="#runnels-et-al-1952" onclick="scrollToSection('runnels-et-al-1952')">(Runnels et al., 1952)</a>. Later in 1850, Scotland had an oil-shale operation using the Young process <a href="#runnels-et-al-1952" onclick="scrollToSection('runnels-et-al-1952')">(Runnels et al., 1952)</a>. Furthermore, these oil-shale operations were established in many areas such as: Europe, Asia, Oceania, North America, South America, Africa and the Middle East <a href="#runnels-et-al-1952" onclick="scrollToSection('runnels-et-al-1952')">(Runnels et al., 1952)</a>. 
     <br>
     <br>
   <p>
-    During both world wars Germany took a big investment of synthetic fuels where Friedrich Bergius, a German scientist, played a vital role in advancing the conversion of coal into synthetic fuel through the Bergius process. (Encyclopædia Britannica, 2023). Simultaneously another noteworthy project was the Fischer-Tropsch synthesis (FTS) (Figure 1), developed by Franz Fischer and Hans Tropsch. (Dry, 2004).     <br>
+    During both world wars Germany took a big investment of synthetic fuels where Friedrich Bergius, a German scientist, played a vital role in advancing the conversion of coal into synthetic fuel through the Bergius process <a href="#friedrich-bergius-2023" onclick="scrollToSection('friedrich-bergius-2023')">(Encyclopædia Britannica, 2023)</a>. Simultaneously another noteworthy project was the Fischer-Tropsch synthesis (FTS) (Figure 1), developed by Franz Fischer and Hans Tropsch <a href="#dry-m-2004" onclick="scrollToSection('dry-m-2004')">(Dry, 2004)</a>.
+    <br>
     <br>
     <figure>
         <img src="ft.png" alt="A graphical representation of the proccesss turning gas,coal or biomass into different types of wanted products using the Fischer-Tropsch synthesis">
@@ -153,20 +165,21 @@
           (Figure 1)
           <br>
           A graphical representation of the proccesss turning gas,coal or biomass into different types of wanted products using the Fischer-Tropsch synthesis
-          (Yanping Chen et al.,2021)
+          <a href="#yanping-chen-et-al-2021" onclick="scrollToSection('yanping-chen-et-al-2021')">(Yanping Chen et al., 2021)</a>
+
         </figcaption>
     </figure>
      <p>
-    Despite these pioneering efforts, the awareness of the development of synthetic fuels remained relatively quiet due to inefficiencies and high costs. Germany took a significant interest in synthetic fuels to reduce its dependence on petroleum imports (Dry, 2004). During 1930s, the Nazi party focused its attention on synthetic fuels, as an economic standpoint and in preparation for outrunning any enemies. When Germany lost the war, their enemies banned synthetic fuel production in 1945 throughout the country (U.S. Department of State, 1945). This ban led to the dismantling of FTS plants, marking a sudden halt to the industry.
+    Despite these pioneering efforts, the awareness of the development of synthetic fuels remained relatively quiet due to inefficiencies and high costs. Germany took a significant interest in synthetic fuels to reduce its dependence on petroleum imports <a href="#dry-m-2004" onclick="scrollToSection('dry-m-2004')">(Dry, 2004)</a>. During 1930s, the Nazi party focused its attention on synthetic fuels, as an economic standpoint and in preparation for outrunning any enemies. When Germany lost the war, their enemies banned synthetic fuel production in 1945 throughout the country <a href="#us-dept-state-1945" onclick="scrollToSection('us-dept-state-1945')">(U.S. Department of State, 1945)</a>. This ban led to the dismantling of FTS plants, marking a sudden halt to the industry.
     <br>
      <br>
 <h2 id="Post_war_Development">Post war Development</h2>
         <p>
-    However, this was not the end for synthetic fuels. Already in the 1930s, South African companies displayed interest in the subject, investing in the construction of FTS plants in South Africa. (Hilsenrath, 1989) After the war, the United States reignited its archaic enthusiasm for synthetic fuels. 
+    However, this was not the end for synthetic fuels. Already in the 1930s, South African companies displayed interest in the subject, investing in the construction of FTS plants in South Africa <a href="#hilsenrath-1989" onclick="scrollToSection('hilsenrath-1989')">(Hilsenrath, 1989)</a>. After the war, the United States reignited its archaic enthusiasm for synthetic fuels. 
     <br>
 <br>
            <p>
-    A milestone for the United States arrived on April 5th, 1944, when Congress approved the Synthetic Fuels Act. This legislation allocated $20 million resulting in the establishment of new laboratories and plant focused on advancing synthetic fuels. (Vietor, 1980). Progress and innovation continued at a steady but measured pace. During 1980’s in America, when a dramatic drop in oil prices prompted the discontinuation of further synthetic fuel production (Figure 2)(ChartsBin, 2014). Unfortunately, it was abandoned, and it wouldn't survive this time around.
+    A milestone for the United States arrived on April 5th, 1944, when Congress approved the Synthetic Fuels Act. This legislation allocated $20 million resulting in the establishment of new laboratories and plant focused on advancing synthetic fuels <a href="#vietor-1980" onclick="scrollToSection('vietor-1980')">(Vietor, 1980)</a>. Progress and innovation continued at a steady but measured pace. During 1980’s in America, when a dramatic drop in oil prices prompted the discontinuation of further synthetic fuel production (Figure 2)<a href="#chartsbin" onclick="scrollToSection('chartsbin')">(ChartsBin, 2014)</a>. Unfortunately, it was abandoned, and it wouldn't survive this time around.
     <br>
     <br>
     <figure>
@@ -174,24 +187,25 @@
         <figcaption>
           (Figure 2)
           <br>
-          A graphical reporesentation of the historical crude oil prices, 1861 to present. (ChartsBin, 2014)
+          A graphical reporesentation of the historical crude oil prices, 1861 to present. <a href="#chartsbin" onclick="scrollToSection('chartsbin')">(ChartsBin, 2014)</a>
         </figcaption>
     </figure>
     <br>
     <h2 id="Eco_synthetic_fuels">Eco synthetic fuels</h2>
               <p>
-    A synthetic fuel is “a liquid or gaseous fuel derived from a source such as coal, shale oil, tar sands, or biomass, used as a substitute for oil or natural gas” (Cleveland & Morris, 2015). Early production of synthetic fuels was environmentally still damaging as it was just a process of turning coal into products like gas. During the process, toxic gases are created and released into the atmosphere (Dry, 2004).    <br>
+    A synthetic fuel is “a liquid or gaseous fuel derived from a source such as coal, shale oil, tar sands, or biomass, used as a substitute for oil or natural gas” <a href="#cleveland-morris-2015" onclick="scrollToSection('cleveland-morris-2015')">(Cleveland & Morris, 2015)</a>. Early production of synthetic fuels was environmentally still damaging as it was just a process of turning coal into products like gas. During the process, toxic gases are created and released into the atmosphere <a href="#dry-m-2004" onclick="scrollToSection('dry-m-2004')">(Dry, 2004)</a>.
+                <br>
 <br>
                  <p>
-    With recent technological advancements have rekindled interest in developing an alternative fuel system for conventional combustion engines that eliminates or dramatically reduces toxic emissions. There are around 1.474 billion cars on the road (Hedges Company, 2023). It is also said that there are around 26 million electric cars on the road (Iea, 2023). Then approximately 1.45 billion combustion engine vehicles could be scrapped and taken off the roads. If electric cars were to replace combustion cars, then would there be enough lithium to make batteries for them? Yet, transport is critical to the working of the efficient economies.
+    With recent technological advancements have rekindled interest in developing an alternative fuel system for conventional combustion engines that eliminates or dramatically reduces toxic emissions. There are around 1.474 billion cars on the road <a href="#hedges-company" onclick="scrollToSection('hedges-company')">(Hedges Company, 2023)</a>. It is also said that there are around 26 million electric cars on the road <a href="#hedges-company" onclick="scrollToSection('hedges-company')">(Hedges Company, 2023)</a>. Then approximately 1.45 billion combustion engine vehicles could be scrapped and taken off the roads. If electric cars were to replace combustion cars, then would there be enough lithium to make batteries for them? Yet, transport is key to the working of efficient economies.
     <br>
 <br>
                     <p>
-    Modern synthetic fuels, known as e-fuels, offer a new hope. Porsche has been discreetly testing and developing e-fuels. This innovative fuel could potentially convert any combustion engines carbon dioxide-free with only the need for minor tweaks to the tuning of the car. In mid-2022, a plant in Chile began production of this new fuel. The e-fuel production process involves water and carbon dioxide. Hydrogen is generated via electrolysis, employing a direct current to split water molecules. The hydrogen is collected at the cathode, while the anode attracts carbon dioxide. This process, referred to as methanol synthesis, yields e-methanol, which is subsequently transformed into synthetic petrol through another process known as MTG synthesis (Porsche, 2019).
+    Modern synthetic fuels, known as e-fuels, offer a new hope. Porsche has been discreetly testing and developing e-fuels. This innovative fuel could potentially convert any combustion engines carbon dioxide-free with only the need for minor tweaks to the tuning of the car. In mid-2022, a plant in Chile began production of this new fuel <a href="#porsche-2019" onclick="scrollToSection('porsche-2019')">(Porsche, 2019)</a>. The e-fuel production process involves water and carbon dioxide. Hydrogen is generated via electrolysis, employing a direct current to split water molecules. The hydrogen is collected at the cathode, while the anode attracts carbon dioxide. This process, referred to as methanol synthesis, yields e-methanol, which is subsequently transformed into synthetic petrol through another process known as MTG synthesis <a href="#porsche-2019" onclick="scrollToSection('porsche-2019')">(Porsche, 2019)</a>.
     <br>
 <br>
                        <p>
-    Porsche was determined to be producing around 130,000 litre of e-fuel a year in their new Chile production plant by the end of 2022. They showcased their innovation by fuelling all their pre-1966 911 cars at the 2023 Goodwood Revival Festival (Jupp, 2023). Within the automotive industry new automotive ideas and technique are first designed and trialled on racing vehicles. After positive results the new technology trickles down into newly built vehicles that are used by the public. Porsche tested their e-fuels in the 2021 and 2022 seasons of the Porsche Mobil Super Cup, with all participating cars running on their new e-fuel. Both ExxonMobil and Porsche are working together to advance the progress of biofuels as well as renewable efuels (ExxonMobil, 2021). This progress shows that we are not far off from having this technology within our everyday cars.
+    Porsche was determined to be producing around 130,000 litre of e-fuel a year in their new Chile production plant by the end of 2022. They showcased their innovation by fuelling all their pre-1966 911 cars at the 2023 Goodwood Revival Festival <a href="#jupp-2023" onclick="scrollToSection('jupp-2023')">(Jupp, 2023)</a>. Within the automotive industry new automotive ideas and technique are first designed and trialled on racing vehicles. After positive results the new technology trickles down into newly built vehicles that are used by the public. Porsche tested their e-fuels in the 2021 and 2022 seasons of the Porsche Mobil Super Cup, with all participating cars running on their new e-fuel <a href="#exxonmobil-porsche-2021" onclick="scrollToSection('exxonmobil-porsche-2021')">(ExxonMobil, 2021)</a>. Both ExxonMobil and Porsche are working together to advance the progress of biofuels as well as renewable efuels <a href="#exxonmobil-porsche-2021" onclick="scrollToSection('exxonmobil-porsche-2021')">(ExxonMobil, 2021)</a>. This progress shows that we are not far off from having this technology within our everyday cars.
     <br>
 <br>
                           <p>
@@ -204,48 +218,75 @@
 
       <br>
       <br>
+    <p id="chartsbin">
       ChartsBin, statistics collector team 2014, Historical crude oil prices, 1861 to present, ChartsBin. Available at: <a href="http://chartsbin.com/view/oau" target="_blank">http://chartsbin.com/view/oau</a> (Accessed: 30 October 2023).
-      <br>
+    </p>
     <br>
-    Cleveland, C.J. and Morris, C. (eds.) (2015) Dictionary of energy, ScienceDirect. Available at: <a href="https://www.sciencedirect.com/book/9780080968117/dictionary-of-energy" target="_blank">https://www.sciencedirect.com/book/9780080968117/dictionary-of-energy </a> (Accessed: 26 November 2023).
-    <br>
-      <br>
-      Dry, M. (2004) ‘page 1-32’, in Fischer-Tropsch technology. Amsterdam: Elsevier, pp. 1–32.
-    <br>
-    <br>
-    Efuels. Available at: <a href="https://media.porsche.com/mediakit/innovation-sustainability-performance/en/innovation-sustainability-performance/synthetic-fuels" target="_blank">https://media.porsche.com/mediakit/innovation-sustainability-performance/en/innovation-sustainability-performance/synthetic-fuels</a> (Accessed: 03 November 2023).
-    <br>
-    <br>
-      ExxonMobil and Porsche are testing advanced biofuels and renewable, lower carbon efuels  ExxonMobil (2021). Available at: <a href="https://corporate.exxonmobil.com/news/news-releases/2021/0330_exxonmobil-and-porsche-test-lower-carbon-fuel-in-race-conditions" target="_blank">https://corporate.exxonmobil.com/news/news-releases/2021/0330_exxonmobil-and-porsche-test-lower-carbon-fuel-in-race-conditions</a> (Accessed: 03 November 2023).
-      <br>
-      <br>
-      Friedrich Bergius (2023) Encyclopædia Britannica. Available at: <a href="https://www.britannica.com/biography/Friedrich-Bergius" target="_blank">https://www.britannica.com/biography/Friedrich-Bergius</a> (Accessed: 30 October 2023).
-      <br>
-      <br>
-      Hilsenrath, P. (1989) The development of synthetic fuels in South Africa - JSTOR, jstor. Available at: <a href="https://www.jstor.org/stable/24807938" target="_blank">https://www.jstor.org/stable/24807938</a> (Accessed: 03 November 2023).
-      <br>
-      <br>
-      Hedges Company. Available at: <a href="https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world" target="_blank">https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world</a> (Accessed: 03 November 2023).
-      <br>
-      <br>
-    Iea  Trends in electric light-duty vehicles – global EV outlook 2023 – analysis, IEA. Available at: <a href="https://www.iea.org/reports/global-ev-outlook-2023/trends-in-electric-light-duty-vehicles" target="_blank">https://www.iea.org/reports/global-ev-outlook-2023/trends-in-electric-light-duty-vehicles</a> (Accessed: 05 November 2023).
-    <br>
-    <br>
-      Jupp, E. (2023) Sustainable fuels – ‘setting the example’ at revival 2023: GRR, Goodwood. Available at: <a href="https://www.goodwood.com/grr/event-coverage/goodwood-revival/2023/9/sustainable-fuels--setting-the-example-at-revival-2023" target="_blank">https://www.goodwood.com/grr/event-coverage/goodwood-revival/2023/9/sustainable-fuels--setting-the-example-at-revival-2023</a> (Accessed: 03 November 2023).
-      <br>
-    <br>
-    Runnels, R.T. et al. (1952) Oil shale in Kansas, KGS. Available at:  <a href="https://www.kgs.ku.edu/Publications/Bulletins/96_3/index.html " target="_blank">https://www.kgs.ku.edu/Publications/Bulletins/96_3/index.html </a> (Accessed: 26 November 2023). Kansas Geological Survey, Bulletin 96, part 3.
-    <br>
-      <br>
 
-     U.S. Department of State - THE CONFERENCE OF BERLIN (1945). Available at: <a href="https://history.state.gov/historicaldocuments/frus1945Berlinv02/d848" target="_blank">https://history.state.gov/historicaldocuments/frus1945Berlinv02/d848</a> (Accessed: 05 November 2023).
+    <p id="cleveland-morris-2015">
+      Cleveland, C.J. and Morris, C. (eds.) (2015) Dictionary of energy, ScienceDirect. Available at: <a href="https://www.sciencedirect.com/book/9780080968117/dictionary-of-energy" target="_blank">https://www.sciencedirect.com/book/9780080968117/dictionary-of-energy</a> (Accessed: 26 November 2023).
+    </p>
     <br>
+
+    <p id="dry-m-2004">
+      Dry, M. (2004) ‘page 1-32’, in Fischer-Tropsch technology. Amsterdam: Elsevier, pp. 1–32. 
+    </p>
     <br>
+
+    <p id="porsche-2019">
+      Efuels, Porsche (2019). Available at: <a href="https://media.porsche.com/mediakit/innovation-sustainability-performance/en/innovation-sustainability-performance/synthetic-fuels" target="_blank">https://media.porsche.com/mediakit/innovation-sustainability-performance/en/innovation-sustainability-performance/synthetic-fuels</a> (Accessed: 03 November 2023).
+    </p>
+    <br>
+
+    <p id="exxonmobil-porsche-2021">
+      ExxonMobil and Porsche are testing advanced biofuels and renewable, lower carbon efuels. ExxonMobil (2021). Available at: <a href="https://corporate.exxonmobil.com/news/news-releases/2021/0330_exxonmobil-and-porsche-test-lower-carbon-fuel-in-race-conditions" target="_blank">https://corporate.exxonmobil.com/news/news-releases/2021/0330_exxonmobil-and-porsche-test-lower-carbon-fuel-in-race-conditions</a> (Accessed: 03 November 2023).
+    </p>
+    <br>
+
+    <p id="friedrich-bergius-2023">
+      Friedrich Bergius (2023) Encyclopædia Britannica. Available at: <a href="https://www.britannica.com/biography/Friedrich-Bergius" target="_blank">https://www.britannica.com/biography/Friedrich-Bergius</a> (Accessed: 30 October 2023).
+    </p>
+    <br>
+
+    <p id="hilsenrath-1989">
+      Hilsenrath, P. (1989) The development of synthetic fuels in South Africa - JSTOR, jstor. Available at: <a href="https://www.jstor.org/stable/24807938" target="_blank">https://www.jstor.org/stable/24807938</a> (Accessed: 03 November 2023).
+    </p>
+    <br>
+
+    <p id="hedges-company">
+      Hedges Company. Available at: <a href="https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world" target="_blank">https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world</a> (Accessed: 03 November 2023).
+    </p>
+    <br>
+
+    <p id="iea-2023">
+      IEA Trends in electric light-duty vehicles – global EV outlook 2023 – analysis, IEA (2023). Available at: <a href="https://www.iea.org/reports/global-ev-outlook-2023/trends-in-electric-light-duty-vehicles" target="_blank">https://www.iea.org/reports/global-ev-outlook-2023/trends-in-electric-light-duty-vehicles</a> (Accessed: 05 November 2023).
+    </p>
+    <br>
+
+    <p id="jupp-2023">
+      Jupp, E. (2023) Sustainable fuels – ‘setting the example’ at revival 2023: GRR, Goodwood. Available at: <a href="https://www.goodwood.com/grr/event-coverage/goodwood-revival/2023/9/sustainable-fuels--setting-the-example-at-revival-2023" target="_blank">https://www.goodwood.com/grr/event-coverage/goodwood-revival/2023/9/sustainable-fuels--setting-the-example-at-revival-2023</a> (Accessed: 03 November 2023).
+    </p>
+    <br>
+
+    <p id="runnels-et-al-1952">
+      Runnels, R.T. et al. (1952) Oil shale in Kansas, KGS. Available at: <a href="https://www.kgs.ku.edu/Publications/Bulletins/96_3/index.html" target="_blank">https://www.kgs.ku.edu/Publications/Bulletins/96_3/index.html</a> (Accessed: 26 November 2023). Kansas Geological Survey, Bulletin 96, part 3.
+    </p>
+    <br>
+    <p id="us-dept-state-1945">
+      U.S. Department of State - THE CONFERENCE OF BERLIN (1945). Available at: <a href="https://history.state.gov/historicaldocuments/frus1945Berlinv02/d848" target="_blank">https://history.state.gov/historicaldocuments/frus1945Berlinv02/d848</a> (Accessed: 05 November 2023).
+    </p>
+    <br>
+
+    <p id="vietor-1980">
       Vietor, R.H.K. (1980) The Synthetic Liquid Fuels Program: Energy politics in the ... - JSTOR, jstor. Available at: <a href="https://www.jstor.org/stable/3114274" target="_blank">https://www.jstor.org/stable/3114274</a> (Accessed: 03 November 2023).
+    </p>
     <br>
+
+    <p id="yanping-chen-et-al-2021">
+      Yanping Chen et al. (2021) Carbon-based catalysts for Fischer–Tropsch synthesis, Chemical Society Reviews. Available at: <a href="https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a" target="_blank">https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a</a> (Accessed: 21 November 2023).
+    </p>
     <br>
-    Yanping Chen et al. (2021) Carbon-based catalysts for Fischer–Tropsch synthesis, Chemical Society Reviews. Available at: <a href="https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a" 
-target="_blank">https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a</a> (Accessed: 21 November 2023). 
+
   </p>
   <hr>
   <h2 id="Conference_Presentation:_Synthetic_fuels">Presentation</h2>
@@ -276,11 +317,23 @@ target="_blank">https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a</
       var elem = document.getElementById("slide-container");
 
       if (!document.fullscreenElement) {
+        elem.style.width = "100%";
+        elem.style.height = "100%";
+        elem.style.objectFit = "contain";
+        elem.style.display = "flex";
+        elem.style.justifyContent = "center";
+        elem.style.alignIitems = "center";
         elem.requestFullscreen().catch(err => {
           console.log(`Error attempting to enable full-screen mode: ${err.message}`);
         });
       } else {
         document.exitFullscreen();
+        elem.style.width = "";
+        elem.style.height = "";
+        elem.style.objectFit = "";
+        elem.style.display = "";
+        elem.style.justifyContent = "";
+        elem.style.alignIitems = "";
       }
     }
 
