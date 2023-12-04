@@ -2,10 +2,10 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png"type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
   <title>A New Hope: Synthetic Fuel</title>
   <style>
-    
+
     body {
       background-image: url("stars.jpg");
       background-size: cover;
@@ -41,7 +41,8 @@
     th {
       border: 1px solid white;
       text-align: center;
-      padding: 8px;
+      font-size: 20px;
+      vertical-align: middle
     }
 
     td {
@@ -64,6 +65,13 @@
     table a {
       color: white;
       text-decoration: none;
+    }
+
+
+    .button {
+      margin-right: 10px; 
+      padding: 5px 10px;
+      font-size: 16px; 
     }
   </style>
   <img src="Logo.png" alt="Banner" width="1080" height="auto">
@@ -98,10 +106,10 @@
       <td><a href="#Eco_synthetic_fuels">Eco synthetic fuels</a></td>
     </tr>
     <tr>
-      <td><a href="#Conference_Presentation:_Synthetic_fuels">Conference Presentation: Synthetic fuels</a></td>
+      <td><a href="#References">References</a></td>
     </tr>
     <tr>
-      <td><a href="#References">References</a></td>
+      <td><a href="#Conference_Presentation:_Synthetic_fuels">Conference Presentation: Synthetic fuels</a></td>
     </tr>
   <br>
   </table>
@@ -171,39 +179,7 @@
   This is the only hope to save the combustion engine and car fanatics all around the world dread the day that we these magnificent machines will be just trophies in a glass cabinet rarely allowed to be used again. However, if we can get synthetic fuel to be produced at a sufficient rate and then distributed around the world not only could we save billions of tons of scrap but the motors that many of us adore and cherish.
   </p>
   <hr>
-  <h3 id="Conference_Presentation:_Synthetic_fuels">Conference Presentation: Synthetic fuels</h3>
-  <script>
-    var slideimage = ["slide1.png", "slide2.png", "slide3.png", "slide4.png"];
-    var currentslide = 0
-    function showslide() {
-      document.getElementById('slide').src = slideimage[currentslide];
-    }
-    function nextslide() {
-      currentslide = (currentslide + 1) % slideimage.length;
-      showslide();
-    }
-    function prevslide(){
-      currentslide = (currentslide - 1 + slideimage.length) % slideimage.length;
-      showslide();
-    }
-    function showslidenumber(slidenumber) {
-      currentslide = slidenumber -1;
-      showslide();
-    }
-    showslide();
-  </script>
-  <div id="slide-container">
-    <img id="slide" src="slide1.png" alt="Slide 1" style="width:auto; height:auto;">
-    <div class="button-container">
-      <button class="button" onclick="prevslide()">Previous</button>
-      <button class="button" onclick="nextslide()">Next</button>
-    </div>
-    <div class="slide-number-container">
-      <button class="button" onclick="showslidenumber(1)">1</button>
-      <button class="button" onclick="showslidenumber(2)">2</button>
-      <button class="button" onclick="showslidenumber(3)">3</button>
-      <button class="button" onclick="showslidenumber(4)">4</button>
-  <hr>
+
   <h3 id="References">References</h3>
   <p>
 
@@ -252,6 +228,60 @@
     Yanping Chen et al. (2021) Carbon-based catalysts for Fischer–Tropsch synthesis, Chemical Society Reviews. Available at: <a href="https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a" 
 target="_blank">https://pubs.rsc.org/en/content/articlehtml/2021/cs/d0cs00905a</a> (Accessed: 21 November 2023). 
   </p>
+  <hr>
+  <h3 id="Conference_Presentation:_Synthetic_fuels">Conference Presentation: Synthetic fuels</h3>
+  <script>
+    var slideimage = ["slide1.png", "slide2.png", "slide3.png", "slide4.png"];
+    var currentslide = 0;
+
+    function showslide() {
+      document.getElementById('slide').src = slideimage[currentslide];
+    }
+
+    function nextslide() {
+      currentslide = (currentslide + 1) % slideimage.length;
+      showslide();
+    }
+
+    function prevslide() {
+      currentslide = (currentslide - 1 + slideimage.length) % slideimage.length;
+      showslide();
+    }
+
+    function showslidenumber(slidenumber) {
+      currentslide = slidenumber - 1;
+      showslide();
+    }
+
+    function toggleFullScreen() {
+      var elem = document.getElementById("slide-container");
+
+      if (!document.fullscreenElement) {
+        elem.requestFullscreen().catch(err => {
+          console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    showslide();
+  </script>
+  <br>
+  <div id="slide-container">
+    <img id="slide" src="slide1.png" alt="Slide 1" style="width:auto; height:auto;">
+    <div class="button-container">
+      <button class="button" onclick="prevslide()">Previous</button>
+      <button class="button" onclick="nextslide()">Next</button>
+      <button class="button" onclick="toggleFullScreen()">Toggle Fullscreen</button>
+    </div>
+    <br>
+    <div class="slide-number-container">
+      <button class="button" onclick="showslidenumber(1)">1</button>
+      <button class="button" onclick="showslidenumber(2)">2</button>
+      <button class="button" onclick="showslidenumber(3)">3</button>
+      <button class="button" onclick="showslidenumber(4)">4</button>
+  </div>
 
 
 </body>
