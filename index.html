@@ -1,9 +1,8 @@
 <html>
 
 <head>
-  <body id="top">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
   <title>A New Hope: Synthetic Fuel</title>
     <style>
         body {
@@ -11,7 +10,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
-          background-attachment: scroll;
+          background-attachment: fixed;
           color: white;
           font-family: Arial, sans-serif;
           text-align: center;
@@ -48,8 +47,14 @@
           flex-wrap: wrap;
         }
       a {
-        text-decoration: none;
-        color: white; 
+        text-decoration: underline;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      a:hover {
+        color: grey;
+        text-decoration: underline;
       }
 
         #banner a {
@@ -73,20 +78,19 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* Push items to the bottom */
+        justify-content: flex-end; 
         align-items: center;
-        /* Adjust the height based on your preference */
+     
       }
+      
     </style>
+</head>
+  <body id="top">
   <img src="Logo.png" alt="Banner" width="1080" height="auto">
+    <hr>
   <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
   <h2>Student URN: 6797020 </h2>
   <hr>
-  <h2 style="font-family: calibri;"><b>Conference paper: Synthetic fuels</b></h2>
-  <hr>
-</head>
-
-<body>
   <h2>Menu</h2>
 
   <div id="banner">
@@ -169,6 +173,7 @@
 
         </figcaption>
     </figure>
+    <br>
      <p>
     Despite these pioneering efforts, the awareness of the development of synthetic fuels remained relatively quiet due to inefficiencies and high costs. Germany took a significant interest in synthetic fuels to reduce its dependence on petroleum imports <a href="#dry-m-2004" onclick="scrollToSection('dry-m-2004')">(Dry, 2004)</a>. During 1930s, the Nazi party focused its attention on synthetic fuels, as an economic standpoint and in preparation for outrunning any enemies. When Germany lost the war, their enemies banned synthetic fuel production in 1945 throughout the country <a href="#us-dept-state-1945" onclick="scrollToSection('us-dept-state-1945')">(U.S. Department of State, 1945)</a>. This ban led to the dismantling of FTS plants, marking a sudden halt to the industry.
     <br>
@@ -322,7 +327,7 @@
         elem.style.objectFit = "contain";
         elem.style.display = "flex";
         elem.style.justifyContent = "center";
-        elem.style.alignIitems = "center";
+        elem.style.alignitems = "center";
         elem.requestFullscreen().catch(err => {
           console.log(`Error attempting to enable full-screen mode: ${err.message}`);
         });
@@ -333,7 +338,7 @@
         elem.style.objectFit = "";
         elem.style.display = "";
         elem.style.justifyContent = "";
-        elem.style.alignIitems = "";
+        elem.style.alignitems = "";
       }
     }
 
